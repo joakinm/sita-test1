@@ -14,7 +14,7 @@ public getLicensePlate(num: number): string {
         26**6          // k=6: AAAAAA to ZZZZZZ (308,915,776 plates)
     ];
 
-    const max = segmentSizes.reduce((prev, current)=> prev + current, 0) // if greater than max, print ZZZZZZ
+    const max = segmentSizes.reduce((prev, current)=> prev + current, 0) // if greater than max, returns ZZZZZZ
     if(num >= max) {
         return 'ZZZZZZ'
     }
